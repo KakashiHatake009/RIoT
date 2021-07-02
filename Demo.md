@@ -1,13 +1,16 @@
-### DEMO
+### Initial Draft
 
 __Introduction:__
-__Diagram:__
+A smart RIoT (Resilient Iot) irrigation system, that gets data from temperature, soil moisture, and rain sensors based on the data from sensors the decision will be made (Pump water or do not pump water). If the sensors fail to deliver data, the decision will be made from the resilient features.
+
+__Architecture Diagram:__
+![architecture](./architecture.png)
 __Tasks:__
 
   __Task 1__
 -   **Hardware Configuratuion.** 
     - Installation of `PI` OS in the gateway. 
-    - Connecting all the sensors to    `ESP32`.      
+    - Connecting all the sensors to  `ESP32`.      
     - Fixing `ESP32` on the breadboard and completing the wiring of sensors.
      - **Responsible team members:**
         - Prashanth K.
@@ -17,7 +20,7 @@ __Task 2__
 -   **Reading Data from Sensors.** 
        - Configured   `Arduino IDE` and `Esp32` by installing all dependencies
        - Writing code for collecting the data from individual sensors.
-       - Integrating all the sensor code in to one  `.INO` file.
+       - Integrating all the sensor code into one  `.INO` file.
        - Processed the incoming data from sensors and producing required results.
         - **Responsible team members:**
           - Prathyum Ramesh
@@ -57,8 +60,8 @@ __Task 5__
  
 __Task 6__  
 -   **Resilience** 
-    -  Overriding the faulty sensors data with the API data from cloud.
-    -  Saving the data from sensors until we get an `ACK` from PI and resend after a period of time if we dont receive the `ACK`.
+    -  Overriding the faulty sensors data with the API data from the cloud.
+    -  Saving the data from sensors until we get an `ACK` from PI and resend after a period of time if we don't receive the `ACK`.
     - **Responsible team members:**
         - Prashanth K.
 
